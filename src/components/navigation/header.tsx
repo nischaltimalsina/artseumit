@@ -16,7 +16,7 @@ import { ThemeSwitch } from '@/components/common';
 
 export function Header() {
   return (
-    <header className='fixed top-0 w-full text-foreground font-light z-50 backdrop-blur-sm'>
+    <header className='fixed top-0 w-full text-foreground font-light z-50 bg-background/70 backdrop-blur-sm'>
       <div className='max-w-screen-2xl text-lg mx-auto flex gap-24 items-center px-5 h-24 font-normal'>
         <div className=' flex items-center h-10'>
           <Link href={'/'} className='flex gap-2 items-center'>
@@ -56,7 +56,7 @@ export function Header() {
           <Button
             size={'lg'}
             variant='outline'
-            className='border-primary rounded-full text-lg font-normal'>
+            className='border-primary bg-transparent rounded-full text-lg font-normal'>
             Contact Us
           </Button>
         </div>
