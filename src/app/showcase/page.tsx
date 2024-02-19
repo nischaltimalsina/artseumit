@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const ShowcasePage = () => {
+const ShowcasePage = () => {
   return (
     <div>ShowcasePage</div>
   )
 }
+
+export default ShowcasePage
