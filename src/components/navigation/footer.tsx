@@ -12,10 +12,10 @@ import {
 
 export const Footer = () => {
   return (
-    <div className='w-full bg-foreground text-background py-16'>
+    <div className='w-full bg-foreground text-background pt-16 pb-8'>
       <div className='flex flex-col gap-12 w-full max-w-screen-2xl mx-auto p-5 items-center '>
-        <div className='w-full grid grid-cols-3 gap-x-16'>
-          <div className='col-span-3 sm:col-span-2 xl:col-span-1 flex flex-col gap-4 items-start'>
+        <div className='w-full grid grid-cols-4 gap-16'>
+          <div className='col-span-4 sm:col-span-3 lg:col-span-2 flex flex-col gap-4 items-start'>
             <div className=' flex items-center h-10'>
               <Link href={'/'} className='flex gap-2 items-center'>
                 <Logo className='h-8 w-8 [&>path]:fill-background' />
@@ -24,22 +24,22 @@ export const Footer = () => {
                 </span>
               </Link>
             </div>
-            <p className='text-sm font-light'>
+            <p className='font-extralight max-w-xl mt-4'>
               Artseum, a dedicated team of developers and designers, specializes
               in crafting dynamic web experiences that drive results. Whether
               you&apos;re looking to increase brand awareness, generate leads,
               or boost sales, our team has the expertise to help you achieve
               your goals.
             </p>
-            <Button
+            {/* <Button
               size={'lg'}
               variant='outline'
               className='border-accent bg-transparent rounded-full text-lg sm:text-xl font-light sm:w-fit gap-4 mt-4'>
               Get in Touch
               <ArrowRightIcon className='h-6 w-6' />
-            </Button>
+            </Button> */}
           </div>
-          <div className='col-span-3 sm:col-span-2 xl:col-span-1 flex flex-col gap-6 items-end'>
+          <div className='col-span-4 sm:col-span-2 lg:col-span-1 flex flex-col gap-6 lg:items-end'>
             <h3 className='text-xl'>Useful Links</h3>
             <Link href={'/'} className='flex gap-2 items-start mt-3'>
               <span className='font-extralight leading-none'>Home</span>
@@ -54,7 +54,7 @@ export const Footer = () => {
               <span className='font-extralight leading-none'>Services</span>
             </Link>
           </div>
-          <div className='col-span-3 sm:col-span-2 xl:col-span-1 flex flex-col gap-4 items-end'>
+          <div className='col-span-4 sm:col-span-2 lg:col-span-1 flex flex-col gap-4 lg:items-end'>
             <h3 className='text-xl'>Contact Info</h3>
             <p className='font-extralight mt-4'>Alseef, Dubai</p>
             <p className='font-extralight'>+971 56900748</p>
@@ -90,6 +90,12 @@ export const Footer = () => {
               </Link>
             </div>
           </div>
+        </div>
+        <div className='w-full'>
+          <p className='text-center font-extralight'>
+            Copyright &#169; 2021 - {new Date().getFullYear()}. Arteseum IT
+            Solution{' '}
+          </p>
         </div>
       </div>
     </div>

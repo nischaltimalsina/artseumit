@@ -1,3 +1,4 @@
+import { JoinUs } from '../about/sections';
 import { GetInTouch, Hero, Mission } from './sections';
 
 export const Homepage = () => {
@@ -6,6 +7,7 @@ export const Homepage = () => {
       <Hero />
       <GetInTouch />
       <Mission />
+      <JoinUs/>
     </>
   );
 };
