@@ -19,7 +19,7 @@ export const Mission = () => {
         </div>
         <div className='basis-full 2xl:basis-1/2 grid grid-cols-4 gap-12'>
           <div className='col-span-4 sm:col-span-2 xl:col-span-1 flex flex-col gap-3 items-center'>
-            <div className='p-5 bg-border hover:bg-accent rounded-lg ease-in-out duration-300 text-muted-foreground'>
+            <div className='p-5 bg-border hover:opacity-60 rounded-lg ease-in-out duration-300 text-muted-foreground'>
               <StarIcon className='h-6 w-6' />
             </div>
             <h3 className='text-2xl text-pretty text-center'>Excellence</h3>
@@ -29,7 +29,7 @@ export const Mission = () => {
             </p>
           </div>
           <div className='col-span-4 sm:col-span-2 xl:col-span-1 flex flex-col gap-3 items-center'>
-            <div className='p-5 bg-border hover:bg-accent rounded-lg ease-in-out duration-300 text-muted-foreground'>
+            <div className='p-5 bg-border hover:opacity-60 rounded-lg ease-in-out duration-300 text-muted-foreground'>
               <ArrowTopRightIcon className='h-6 w-6' />
             </div>
             <h3 className='text-2xl text-pretty text-center'>Growth</h3>
@@ -39,7 +39,7 @@ export const Mission = () => {
             </p>
           </div>
           <div className='col-span-4 sm:col-span-2 xl:col-span-1 flex flex-col gap-3 items-center'>
-            <div className='p-5 bg-border hover:bg-accent rounded-lg ease-in-out duration-300 text-muted-foreground'>
+            <div className='p-5 bg-border hover:opacity-60 rounded-lg ease-in-out duration-300 text-muted-foreground'>
               <PersonIcon className='h-6 w-6' />
             </div>
             <h3 className='text-2xl text-pretty text-center'>Customer First</h3>
@@ -50,7 +50,7 @@ export const Mission = () => {
             </p>
           </div>
           <div className='col-span-4 sm:col-span-2 xl:col-span-1 flex flex-col gap-3 items-center'>
-            <div className='p-5 bg-border hover:bg-accent rounded-lg ease-in-out duration-300 text-muted-foreground'>
+            <div className='p-5 bg-border hover:opacity-60 rounded-lg ease-in-out duration-300 text-muted-foreground'>
               <TransparencyGridIcon className='h-6 w-6' />
             </div>
             <h3 className='text-2xl text-pretty text-center'>Integrity</h3>

@@ -29,6 +29,7 @@ export const Hero = () => {
           </h2>
           <Button
             size={'lg'}
+            variant={'outline'}
             className='border-primary rounded-full text-lg sm:text-xl font-light sm:w-fit h-14 gap-4 mt-6'>
             Schedule a consultation today!
             <HiOutlineCalendarDays className='h-6 w-6 hidden sm:block' />

@@ -6,12 +6,12 @@ export const JoinUs = () => {
   return (
     <div className='w-full bg-foreground text-background py-20'>
       <div className='flex flex-col lg:flex-row gap-x-12 gap-y-8 w-full max-w-screen-2xl mx-auto p-5 justify-center items-center'>
-        <h3 className='text-[39px] sm:text-[44px] md:text-6xl font-semibold max-w-4xl text-center text-pretty leading-none'>
+        <h3 className='text-[39px] sm:text-[44px] font-semibold max-w-4xl text-center text-pretty leading-none'>
           Lets Work Together
         </h3>
       </div>
-      <div className='flex flex-col  gap-x-12 gap-y-8 w-full max-w-screen-2xl mx-auto p-5 justify-center items-center'>
-        <h3 className='text-xl font-light text-pretty max-w-3xl text-center'>
+      <div className='flex flex-col gap-x-12 gap-y-8 w-full max-w-screen-2xl mx-auto px-5 justify-center items-center'>
+        <h3 className='text-lg sm:text-xl font-light text-pretty max-w-3xl text-center'>
           Join us on your digital transformation journey. Let Artseum be your
           trusted partner, guiding you towards a brighter, more efficient
           future.

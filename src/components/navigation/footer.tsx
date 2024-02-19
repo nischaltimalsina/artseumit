@@ -24,7 +24,7 @@ export const Footer = () => {
                 </span>
               </Link>
             </div>
-            <p className='font-extralight max-w-xl mt-4'>
+            <p className='font-light max-w-xl mt-4'>
               Artseum, a dedicated team of developers and designers, specializes
               in crafting dynamic web experiences that drive results. Whether
               you&apos;re looking to increase brand awareness, generate leads,
@@ -42,23 +42,43 @@ export const Footer = () => {
           <div className='col-span-4 sm:col-span-2 lg:col-span-1 flex flex-col gap-6 lg:items-end'>
             <h3 className='text-xl'>Useful Links</h3>
             <Link href={'/'} className='flex gap-2 items-start mt-3'>
-              <span className='font-extralight leading-none'>Home</span>
+              <span className='font-light leading-none'>Home</span>
             </Link>
-            <Link href={'/'} className='flex gap-2 items-start'>
-              <span className='font-extralight leading-none'>Why Us?</span>
+            <Link href={'/about'} className='flex gap-2 items-start'>
+              <span className='font-light leading-none'>Why Us?</span>
             </Link>
-            <Link href={'/'} className='flex gap-2 items-start'>
-              <span className='font-extralight leading-none'>Contact</span>
+            <Link href={'/contact'} className='flex gap-2 items-start'>
+              <span className='font-light leading-none'>Contact Us</span>
             </Link>
-            <Link href={'/'} className='flex gap-2 items-start'>
-              <span className='font-extralight leading-none'>Services</span>
+            <Link href={'#services'} className='flex gap-2 items-start'>
+              <span className='font-light leading-none'>Services</span>
             </Link>
           </div>
-          <div className='col-span-4 sm:col-span-2 lg:col-span-1 flex flex-col gap-4 lg:items-end'>
+          <div className='col-span-4 sm:col-span-2 lg:col-span-1 flex flex-col gap-2 lg:items-end'>
             <h3 className='text-xl'>Contact Info</h3>
-            <p className='font-extralight mt-4'>Alseef, Dubai</p>
-            <p className='font-extralight'>+971 56900748</p>
-            <p className='font-extralight'>artseumitsolution@gmail.com</p>
+            <p className='font-light mt-4'>Alseef, Dubai</p>
+            <a href='tel:+97156900748' className='font-light hover:underline'>
+              +971 56900748
+            </a>
+            <p className='font-light mt-4'>Kathmandu, Nepal</p>
+            <div className='flex gap-2 flex-wrap lg:justify-end'>
+              <a
+                href='tel:+9779855011772'
+                className='font-light hover:underline'>
+                +977 9855011772
+              </a>
+              |
+              <a
+                href='tel:+9719840528731'
+                className='font-light hover:underline'>
+                +971 9840528731
+              </a>
+            </div>
+            <a
+              href='mailto:artseumitsolution@gmail.com'
+              className='font-light hover:underline'>
+              artseumitsolution@gmail.com
+            </a>
             <div className='flex gap-4'>
               <Link
                 href={
@@ -92,7 +112,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className='w-full'>
-          <p className='text-center font-extralight'>
+          <p className='text-center font-light'>
             Copyright &#169; 2021 - {new Date().getFullYear()}. Arteseum IT
             Solution{' '}
           </p>

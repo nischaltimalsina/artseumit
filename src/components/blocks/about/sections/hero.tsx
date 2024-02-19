@@ -13,13 +13,13 @@ export const Hero = () => {
               : Born from Passion, Fueled by Innovation
             </h3>
             <p className='text-2xl text-center font-light text-muted-foreground'>
-              Your Trusted IT Solution Provider in all of UAE
+              Your Trusted Global IT Solution Provider
             </p>
           </div>
           <div className='flex flex-col'>
             <p className='text-lg font-light max-w-4xl text-center text-pretty'>
               It all began in 2021, with a spark of passion and a vision to
-              provide exceptional IT solutions in Dubai. Our first project,
+              provide exceptional IT solutions. Our first project,
               though challenging and yielding minimal profit, became the
               cornerstone of our commitment to excellence. We learned, we
               evolved, and we built upon that foundation, transforming Artseum

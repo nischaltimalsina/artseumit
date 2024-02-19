@@ -1,12 +1,12 @@
 import { JoinUs } from '../about/sections';
-import { GetInTouch, Hero, Mission } from './sections';
+import { GetInTouch, Hero, Mission, OurClients } from './sections';
 
 export const Homepage = () => {
   return (
     <>
       <Hero />
       <GetInTouch />
-      <Mission />
+      <OurClients/>
       <JoinUs/>
     </>
   );
