@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import { Nanum_Gothic, Inter, Syne, Poppins } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/context/theme-provider';
-import { Header } from '@/components/navigation';
+import { Footer, Header } from '@/components/navigation';
+import { ScrollArea, ScrollBar } from '@/components/ui';
 
 const inter = Poppins({
   subsets: ['latin'],
@@ -49,10 +50,14 @@ export default function RootLayout({
           defaultTheme='system'
           enableSystem
           disableTransitionOnChange>
-          <main className='h-screen w-screen bg-background text-foreground overflow-x-hidden'>
-            <Header />
-            {children}
-          </main>
+          <ScrollArea>
+            <ScrollBar orientation='vertical' />
+            <main className='h-screen w-screen bg-background text-foreground'>
+              <Header />
+              {children}
+              <Footer/>
+            </main>
+          </ScrollArea>
         </ThemeProvider>
       </body>
     </html>

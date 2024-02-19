@@ -20,13 +20,13 @@ export function Header() {
       <div className='max-w-screen-2xl text-lg mx-auto flex gap-24 items-center px-5 h-24 font-normal'>
         <div className=' flex items-center h-10'>
           <Link href={'/'} className='flex gap-2 items-center'>
-            <Logo className='h-8  [&>path]:fill-foreground/80 transition-colors duration-300' />
+            <Logo className='h-8 w-8 [&>path]:fill-foreground/80 transition-colors duration-300' />
             {/* <span className=' text-2xl leading-none'>ARTSEUM</span> */}
           </Link>
         </div>
         <nav className='hidden md:flex gap-8  items-center  justify-center h-10 '>
           <Link
-            href={'/features'}
+            href={'/'}
             className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
             Home
           </Link>
@@ -36,17 +36,17 @@ export function Header() {
             Why Us?
           </Link>
           <Link
-            href={'/docs'}
+            href={'/services'}
             className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
             Services
           </Link>
           <Link
-            href={'/docs'}
+            href={'#showcase'}
             className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
             Showcase
           </Link>
           <Link
-            href={'/docs'}
+            href={'/contact'}
             className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
             Contact
           </Link>
