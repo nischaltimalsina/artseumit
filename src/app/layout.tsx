@@ -50,12 +50,12 @@ export default function RootLayout({
           defaultTheme='system'
           enableSystem
           disableTransitionOnChange>
-          <ScrollArea>
+          <ScrollArea className='scroll-smooth'>
             <ScrollBar orientation='vertical' />
             <main className='h-screen w-screen bg-background text-foreground'>
               <Header />
               {children}
-              <Footer/>
+              <Footer />
             </main>
           </ScrollArea>
         </ThemeProvider>

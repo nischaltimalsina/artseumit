@@ -1,8 +1,9 @@
+import { Showcase } from '@/components/blocks'
 import React from 'react'
 
 const ShowcasePage = () => {
   return (
-    <div>ShowcasePage</div>
+    <Showcase/>
   )
 }
 

@@ -36,12 +36,12 @@ export function Header() {
             Why Us?
           </Link>
           <Link
-            href={'/services'}
+            href={'/#services'}
             className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
             Services
           </Link>
           <Link
-            href={'#showcase'}
+            href={'/showcase'}
             className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
             Showcase
           </Link>

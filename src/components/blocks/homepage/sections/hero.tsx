@@ -1,3 +1,4 @@
+'use client';
 import { Button, ScrollArea, ScrollBar } from '@/components/ui';
 import Image from 'next/image';
 import React from 'react';
@@ -5,10 +6,11 @@ import { HiOutlineCalendarDays, HiOutlineArrowUpRight } from 'react-icons/hi2';
 import hero from '@/assets/images/dev.jpg';
 import proj from '@/assets/images/proj.jpg';
 import logo_white from '@/assets/images/logo-white.jpeg';
+import Marquee from '@/lib/marqee';
 
 export const Hero = () => {
   return (
-    <section className='flex flex-col w-full min-h-full items-center justify-between gap-4 pt-24'>
+    <section className='flex flex-col w-full min-h-fit items-center justify-between gap-4 pt-24'>
       <div className='flex flex-col lg:flex-row gap-x-12 gap-y-24 w-full h-full lg:items-center py-24 max-w-screen-2xl px-5 mx-auto'>
         <div className='lg:basis-1/2 flex flex-col gap-4'>
           <h2 className='text-[39px] sm:text-[44px] md:text-6xl text-center sm:text-start text-pretty text-primary max-w-3xl font-medium leading-[1.1] z-10'>
@@ -65,37 +67,51 @@ export const Hero = () => {
       </div>
       <div className='bg-foreground text-background w-screen font-light'>
         <ScrollArea aria-orientation='horizontal' className='w-full'>
-          <div className='w-full max-w-screen-2xl mx-auto flex justify-between gap-12 px-5 py-8 text-2xl'>
-            <p className=' flex gap-2 items-center leading-none whitespace-nowrap'>
-              <span>
-                <HiOutlineArrowUpRight className='h-6 w-6 mb-1' />
-              </span>
-              Branding
-            </p>
-            <p className=' flex gap-2 items-center leading-none whitespace-nowrap'>
-              <span>
-                <HiOutlineArrowUpRight className='h-6 w-6 mb-1' />
-              </span>
-              Graphic Design
-            </p>
-            <p className=' flex gap-2 items-center leading-none whitespace-nowrap'>
-              <span>
-                <HiOutlineArrowUpRight className='h-6 w-6 mb-1' />
-              </span>
-              Web Development
-            </p>
-            <p className=' flex gap-2 items-center leading-none whitespace-nowrap'>
-              <span>
-                <HiOutlineArrowUpRight className='h-6 w-6 mb-1' />
-              </span>
-              Mobile Development
-            </p>
-            <p className=' flex gap-2 items-center leading-none whitespace-nowrap'>
-              <span>
-                <HiOutlineArrowUpRight className='h-6 w-6 mb-1' />
-              </span>
-              Digital Marketing
-            </p>
+          <div className='w-full max-w-screen-2xl mx-auto flex justify-between gap-12 py-8 text-2xl'>
+            <Marquee speed={60} pauseOnHover className='cursor-pointer'>
+              <p className=' flex gap-2 items-center leading-none whitespace-nowrap pr-12'>
+                <span>
+                  <HiOutlineArrowUpRight className='h-6 w-6 mb-1' />
+                </span>
+                Branding
+              </p>
+              <p className=' flex gap-2 items-center leading-none whitespace-nowrap pr-12'>
+                <span>
+                  <HiOutlineArrowUpRight className='h-6 w-6 mb-1' />
+                </span>
+                Graphic Design
+              </p>
+              <p className=' flex gap-2 items-center leading-none whitespace-nowrap pr-12'>
+                <span>
+                  <HiOutlineArrowUpRight className='h-6 w-6 mb-1' />
+                </span>
+                Web Development
+              </p>
+              <p className=' flex gap-2 items-center leading-none whitespace-nowrap pr-12'>
+                <span>
+                  <HiOutlineArrowUpRight className='h-6 w-6 mb-1' />
+                </span>
+                Mobile Development
+              </p>
+              <p className=' flex gap-2 items-center leading-none whitespace-nowrap pr-12'>
+                <span>
+                  <HiOutlineArrowUpRight className='h-6 w-6 mb-1' />
+                </span>
+                Digital Marketing
+              </p>
+              <p className=' flex gap-2 items-center leading-none whitespace-nowrap pr-12'>
+                <span>
+                  <HiOutlineArrowUpRight className='h-6 w-6 mb-1' />
+                </span>
+                Social Media Management
+              </p>
+              <p className=' flex gap-2 items-center leading-none whitespace-nowrap pr-12'>
+                <span>
+                  <HiOutlineArrowUpRight className='h-6 w-6 mb-1' />
+                </span>
+                3D Design and Animation
+              </p>
+            </Marquee>
           </div>
           <ScrollBar className='opacity-0' orientation='horizontal' />
         </ScrollArea>
