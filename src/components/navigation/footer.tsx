@@ -45,12 +45,12 @@ export const Footer = () => {
               <span className='font-light leading-none'>Home</span>
             </Link>
             <Link href={'/about'} className='flex gap-2 items-start'>
-              <span className='font-light leading-none'>Why Us?</span>
+              <span className='font-light leading-none'>About</span>
             </Link>
             <Link href={'/contact'} className='flex gap-2 items-start'>
               <span className='font-light leading-none'>Contact Us</span>
             </Link>
-            <Link href={'#services'} className='flex gap-2 items-start'>
+            <Link href={'/#services'} className='flex gap-2 items-start'>
               <span className='font-light leading-none'>Services</span>
             </Link>
           </div>

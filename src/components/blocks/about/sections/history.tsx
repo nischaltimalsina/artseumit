@@ -12,7 +12,7 @@ export const History = () => {
           <div className='basis-full 2xl:basis-1/2 flex flex-col gap-6'>
             <div className='flex flex-col items-center leading-[1.1]'>
               <p className='text-2xl text-center font-light text-muted-foreground'>
-              More Than Code, More Than Design
+                More Than Code, More Than Design
               </p>
               <h3 className='text-[32px] sm:text-[44px] font-medium text-pretty text-center max-w-3xl'>
                 A Look Back at Artseum&apos;s Growth Story
@@ -42,10 +42,10 @@ export const History = () => {
               className='h-48 w-48'
             />
             <div className='flex flex-col gap-6'>
-              <h3 className='text-3xl font-medium text-pretty text-center lg:text-start'>
+              <h3 className='text-3xl font-medium text-pretty text-center lg:text-end'>
                 A Legacy of Excellence and Reliability
               </h3>
-              <p className='font-light text-pretty text-center max-w-4xl lg:text-start'>
+              <p className='font-light text-pretty text-center max-w-4xl lg:text-end'>
                 Over the years, we&apos;ve built a comprehensive portfolio,
                 successfully delivering a wide range of projects. Our consistent
                 excellence and reliability have earned us the trust of countless
