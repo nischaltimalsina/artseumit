@@ -19,6 +19,7 @@ export const GetInTouch = () => {
             websites that engage audiences and drive results.
           </p>
           <div className='w-full max-w-2xl flex justify-center lg:justify-start'>
+          <a href="/contact" className='w-fit'> 
             <Button
               size={'lg'}
               variant='outline'
@@ -26,6 +27,7 @@ export const GetInTouch = () => {
               Get in Touch
               <ArrowRightIcon className='h-6 w-6' />
             </Button>
+            </a>
           </div>
         </div>
       </div>

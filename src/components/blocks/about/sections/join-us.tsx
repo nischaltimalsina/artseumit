@@ -18,13 +18,15 @@ export const JoinUs = () => {
         </h3>
         <div className=' flex flex-col items-end'>
           <div className='w-full max-w-2xl flex justify-center lg:justify-start'>
-            <Button
-              size={'lg'}
-              variant='outline'
-              className='border-accent bg-transparent rounded-full text-lg sm:text-xl font-light sm:w-fit h-14 gap-4 mt-6'>
-              Get in Touch
-              <ArrowRightIcon className='h-6 w-6' />
-            </Button>
+            <a href='/contact' className='w-fit'>
+              <Button
+                size={'lg'}
+                variant='outline'
+                className='border-accent bg-transparent rounded-full text-lg sm:text-xl font-light sm:w-fit h-14 gap-4 mt-6'>
+                Get in Touch
+                <ArrowRightIcon className='h-6 w-6' />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

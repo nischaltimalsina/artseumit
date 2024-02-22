@@ -29,13 +29,15 @@ export const Hero = () => {
             Artseum equips you with the tools to succeed in the online
             landscape.
           </h2>
-          <Button
-            size={'lg'}
-            variant={'outline'}
-            className='border-primary rounded-full text-lg sm:text-xl font-light sm:w-fit h-14 gap-4 mt-6'>
-            Schedule a consultation today!
-            <HiOutlineCalendarDays className='h-6 w-6 hidden sm:block' />
-          </Button>
+          <a href='/contact' className='w-fit'>
+            <Button
+              size={'lg'}
+              variant={'outline'}
+              className='border-primary rounded-full text-lg sm:text-xl font-light sm:w-fit h-14 gap-4 mt-6'>
+              Schedule a consultation today!
+              <HiOutlineCalendarDays className='h-6 w-6 hidden sm:block' />
+            </Button>
+          </a>
         </div>
         <div className='lg:basis-1/2 flex flex-col gap-4 '>
           <div className='bg-blue-600 w-full overflow-hidden rounded-xl relative mx-auto lg:max-w-2xl h-[34rem]'>

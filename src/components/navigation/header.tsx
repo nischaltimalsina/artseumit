@@ -67,7 +67,7 @@ export function Header() {
             size={'lg'}
             variant='outline'
             className='border-primary bg-transparent rounded-full text-lg font-normal hidden sm:flex'>
-            Contact Us
+           <a href="/contact"> Contact Us</a>
           </Button>
         </div>
         <div className='flex lg:hidden'>
