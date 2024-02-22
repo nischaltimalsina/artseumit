@@ -69,9 +69,9 @@ export const Footer = () => {
               </a>
               |
               <a
-                href='tel:+9719840528731'
+                href='tel:+9779840528731'
                 className='font-light hover:underline'>
-                +971 9840528731
+                +977 9840528731
               </a>
             </div>
             <a

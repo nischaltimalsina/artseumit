@@ -1,7 +1,7 @@
 'use client';
 import { Logo } from '@/assets/jsx/logo';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui';
 import {
@@ -23,6 +23,8 @@ import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { ThemeSwitch } from '@/components/common';
 
 export function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className='fixed top-0 w-full text-foreground font-light z-50 bg-background/70 backdrop-blur-sm'>
       <div className='max-w-screen-2xl text-lg mx-auto flex gap-6 lg:gap-24 items-center px-5 h-24 font-normal'>
@@ -69,7 +71,7 @@ export function Header() {
           </Button>
         </div>
         <div className='flex lg:hidden'>
-          <Sheet>
+          <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger>
               <HamburgerMenuIcon className='h-8 w-8 hover:text-muted-foreground transition-colors duration-300' />
             </SheetTrigger>
@@ -85,26 +87,31 @@ export function Header() {
               <nav className='flex max-h-full flex-col gap-6 font-light text-xl items-start mt-24 justify-center '>
                 <Link
                   href={'/'}
+                  onClick={()=>setOpen(false)}
                   className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
                   Home
                 </Link>
                 <Link
                   href={'/about'}
+                  onClick={()=>setOpen(false)}
                   className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
                   About
                 </Link>
                 <Link
                   href={'/#services'}
+                  onClick={()=>setOpen(false)}
                   className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
                   Services
                 </Link>
                 <Link
                   href={'/showcase'}
+                  onClick={()=>setOpen(false)}
                   className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
                   Showcase
                 </Link>
                 <Link
                   href={'/contact'}
+                  onClick={()=>setOpen(false)}
                   className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
                   Contact
                 </Link>
@@ -114,6 +121,8 @@ export function Header() {
                   href={
                     'https://api.whatsapp.com/send/?phone=971569007480&text&type=phone_number&app_absent=0'
                   }
+                  target='_blank'
+                  onClick={()=>setOpen(false)}
                   className='flex gap-2 items-center'>
                   <FaWhatsapp className='h-7 w-7 text-green-500' />
                 </Link>
@@ -121,6 +130,8 @@ export function Header() {
                   href={
                     'https://www.instagram.com/artseum_it_solution/?igsh=MTByZG5tazJzMzhiMg%3D%3D&utm_source=qr'
                   }
+                  target='_blank'
+                  onClick={()=>setOpen(false)}
                   className='flex gap-2 items-center'>
                   <FaInstagram className='h-7 w-7 text-pink-500' />
                 </Link>
@@ -128,6 +139,8 @@ export function Header() {
                   href={
                     'https://www.linkedin.com/in/artseum-it-solution-2a15762b4/'
                   }
+                  target='_blank'
+                  onClick={()=>setOpen(false)}
                   className='flex gap-2 items-center'>
                   <FaLinkedin className='h-7 w-7 text-blue-600' />
                 </Link>
@@ -135,6 +148,8 @@ export function Header() {
                   href={
                     'https://www.facebook.com/profile.php?id=61556533765869&sfnsn=scwspwa&mibextid=RUbZ1f'
                   }
+                  target='_blank'
+                  onClick={()=>setOpen(false)}
                   className='flex gap-2 items-center'>
                   <FaFacebook className='h-7 w-7 text-blue-500' />
                 </Link>
