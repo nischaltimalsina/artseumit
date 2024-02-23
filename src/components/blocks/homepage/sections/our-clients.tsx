@@ -10,6 +10,7 @@ import newlook from '@/assets/images/clients/newlook.png';
 import sheinic from '@/assets/images/clients/sheinic.png';
 import swornim from '@/assets/images/clients/swornim.png';
 import unicamp from '@/assets/images/clients/unicamp.png';
+import labline from '@/assets/images/clients/labline.jpg';
 import rulesvip from '@/assets/images/clients/rulesvip.png';
 import Image from 'next/image';
 
@@ -84,6 +85,13 @@ export const OurClients = () => {
               src={newlook}
               alt='New Look Mr Nepal 2023'
               className=' w-24 md:w-48 h-fit object-contain mix-blend-multiply'
+            />
+          </div>
+          <div className=''>
+            <Image
+              src={labline}
+              alt='Labline Traders'
+              className=' brightness-110 w-24 md:w-48 h-fit object-contain mix-blend-multiply'
             />
           </div>
           <div className=''>
