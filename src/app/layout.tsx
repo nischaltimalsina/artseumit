@@ -3,7 +3,7 @@ import { Nanum_Gothic, Inter, Syne, Poppins } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/context/theme-provider';
 import { Footer, Header } from '@/components/navigation';
-import { ScrollArea, ScrollBar } from '@/components/ui';
+import { ScrollArea, ScrollBar, Toaster } from '@/components/ui';
 
 const inter = Poppins({
   subsets: ['latin'],
@@ -58,6 +58,7 @@ export default function RootLayout({
               <Footer />
             </main>
           </ScrollArea>
+        <Toaster/>
         </ThemeProvider>
       </body>
     </html>

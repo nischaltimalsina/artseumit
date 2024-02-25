@@ -1,7 +1,13 @@
 import React from 'react';
 import { ContactForm } from './sections';
+import { sendMail } from '@/lib/mail';
+import { template } from '@/components/templates/template';
+import ContactFormServer from './sections/form-server';
 
 export const Contact = () => {
+  
+
+
   return (
     <section className='flex flex-col w-full min-h-fit items-center justify-between gap-4 pt-12'>
       <div className='flex flex-col lg:flex-row gap-12 w-full h-full lg:items-center py-24 max-w-screen-2xl px-5 mx-auto'>

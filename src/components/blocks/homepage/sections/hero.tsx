@@ -40,14 +40,14 @@ export const Hero = () => {
           </a>
         </div>
         <div className='lg:basis-1/2 flex flex-col gap-4 '>
-          <div className='bg-blue-600 w-full overflow-hidden rounded-xl relative mx-auto lg:max-w-2xl h-[34rem]'>
+          <div className=' w-full overflow-hidden rounded-xl relative mx-auto lg:max-w-2xl h-[34rem]'>
             <Image
               src={hero}
               alt='Artseum IT Logo'
               className='h-full object-cover w-full hover:scale-125 ease-in-out duration-300'
             />
             <div className='absolute bg-background h-64 w-64 rounded-br-xl top-0 left-0 before:absolute before:[content:"_"] before:left-0 before:-bottom-12 before:h-12 before:w-12 before:rounded-tl-xl before:[box-shadow:0px_-1rem_0px_0px_hsl(var(--background))] after:absolute after:[content:"_"] after:top-0 after:-right-12 after:h-12 after:w-12 after:rounded-tl-xl after:[box-shadow:-1rem_0px_0px_0px_hsl(var(--background))] pr-4 pb-4'>
-              <div className='h-full w-full bg-slate-400 rounded-xl overflow-hidden'>
+              <div className='h-full w-full rounded-xl overflow-hidden'>
                 <Image
                   src={logo_white}
                   alt='Artseum IT Logo'
@@ -56,7 +56,7 @@ export const Hero = () => {
               </div>
             </div>
             <div className='absolute bg-background h-40 w-24 ease-out duration-200 sm:h-56 sm:w-48 rounded-tl-xl right-0 bottom-0 before:absolute before:[content:"_"] before:-left-12 before:bottom-0 before:h-12 before:w-12 before:rounded-br-xl before:[box-shadow:1rem_0px_0px_0px_hsl(var(--background))] after:absolute after:[content:"_"] after:right-0 after:-top-12 after:h-12 after:w-12 after:rounded-br-xl after:[box-shadow:1rem_0px_0px_0px_hsl(var(--background))] pl-4 pt-4'>
-              <div className='h-full w-full bg--400 rounded-xl hidden border'>
+              <div className='h-full w-full rounded-xl hidden border'>
                 <Image
                   src={proj}
                   alt='Artseum IT Logo'
