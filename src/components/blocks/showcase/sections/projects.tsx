@@ -15,7 +15,7 @@ export const Projects = () => {
     <section id='services' className='w-full pb-24 scroll-smooth'>
       <div className='w-full flex justify-center pb-12'>
         <h3 className='text-4xl text-pretty text-center max-w-3xl'>
-          Have a look at our Recent Projects
+          Take a look at our Recent Projects
         </h3>
       </div>
       <div className='flex gap-12 w-full max-w-screen-2xl mx-auto p-5 flex-wrap justify-center lg:flex-nowrap'>

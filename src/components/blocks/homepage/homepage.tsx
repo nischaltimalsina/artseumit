@@ -1,13 +1,14 @@
 import { JoinUs } from '../about/sections';
-import { GetInTouch, Hero, Mission, OurClients, Services } from './sections';
+import { GetInTouch, Hero, OurClients, Testimonial } from './sections';
 
 export const Homepage = () => {
   return (
     <>
       <Hero />
-      <Services/>
+      {/* <Services/> */}
       <GetInTouch />
       <OurClients/>
+      <Testimonial/>
       <JoinUs/>
     </>
   );

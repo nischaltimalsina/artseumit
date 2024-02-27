@@ -26,135 +26,150 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className='fixed top-0 w-full text-foreground font-light z-50 bg-background/70 backdrop-blur-sm'>
-      <div className='max-w-screen-2xl text-lg mx-auto flex gap-6 lg:gap-24 items-center px-5 h-24 font-normal'>
-        <div className=' flex items-center h-10'>
-          <Link href={'/'} className='flex gap-2 items-center'>
-            <Logo className='h-8 w-8 [&>path]:fill-foreground/80 transition-colors duration-300' />
+    <header className="fixed top-0 w-full text-foreground font-light z-50 bg-background/70 backdrop-blur-sm">
+      <div className="max-w-screen-2xl text-lg mx-auto flex gap-6 lg:gap-24 items-center px-5 h-16 lg:h-24 font-normal">
+        <div className=" flex items-center h-10">
+          <Link href={'/'} className="flex gap-2 items-center">
+            <Logo className="h-8 w-8 [&>path]:fill-foreground/80 transition-colors duration-300" />
             {/* <span className=' text-2xl leading-none'>ARTSEUM</span> */}
           </Link>
         </div>
-        <nav className='hidden lg:flex gap-8  items-center  justify-center h-10 '>
+        <nav className="hidden lg:flex gap-8  items-center  justify-center h-10 ">
           <Link
             href={'/'}
-            className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
+            className=" hover:text-primary ease-in-out duration-300 whitespace-nowrap"
+          >
             Home
           </Link>
           <Link
             href={'/about'}
-            className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
+            className=" hover:text-primary ease-in-out duration-300 whitespace-nowrap"
+          >
             About
           </Link>
           <Link
-            href={'/#services'}
-            className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
+            href={'/services'}
+            className=" hover:text-primary ease-in-out duration-300 whitespace-nowrap"
+          >
             Services
           </Link>
           <Link
             href={'/showcase'}
-            className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
+            className=" hover:text-primary ease-in-out duration-300 whitespace-nowrap"
+          >
             Showcase
           </Link>
           <Link
             href={'/contact'}
-            className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
+            className=" hover:text-primary ease-in-out duration-300 whitespace-nowrap"
+          >
             Contact
           </Link>
         </nav>
-        <div className='flex gap-6 items-center justify-end h-10 ml-auto'>
-          <ThemeSwitch />
+        <div className="flex gap-6 items-center justify-end h-10 ml-auto">
+          {/* <ThemeSwitch /> */}
           <Button
             size={'lg'}
-            variant='outline'
-            className='border-primary bg-transparent rounded-full text-lg font-normal hidden sm:flex'>
-           <a href="/contact"> Contact Us</a>
+            variant="outline"
+            className="border-primary bg-transparent rounded-full text-lg font-normal hidden sm:flex"
+          >
+            <a href="/contact"> Contact Us</a>
           </Button>
         </div>
-        <div className='flex lg:hidden'>
+        <div className="flex lg:hidden">
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger>
-              <HamburgerMenuIcon className='h-8 w-8 hover:text-muted-foreground transition-colors duration-300' />
+              <HamburgerMenuIcon className="h-8 w-8 hover:text-muted-foreground transition-colors duration-300" />
             </SheetTrigger>
-            <SheetContent className='bg-background border-none w-full h-full sm:max-w-lg p-8 flex flex-col '>
-              <div className=' flex items-center h-10'>
-                <Link href={'/'} className='flex gap-4 items-center'>
-                  <Logo className='h-8 w-8 [&>path]:fill-foreground/80 transition-colors duration-300' />
-                  <span className=' text-4xl text-foreground/80 leading-none font-light mt-1.5'>
+            <SheetContent className="bg-background border-none w-full h-full sm:max-w-lg p-8 flex flex-col ">
+              <div className=" flex items-center h-10">
+                <Link href={'/'} className="flex gap-4 items-center">
+                  <Logo className="h-8 w-8 [&>path]:fill-foreground/80 transition-colors duration-300" />
+                  <span className=" text-4xl text-foreground/80 leading-none font-light mt-1.5">
                     ARTSEUM
                   </span>
                 </Link>
               </div>
-              <nav className='flex max-h-full flex-col gap-6 font-light text-xl items-start mt-24 justify-center '>
+              <nav className="flex max-h-full flex-col gap-6 font-light text-xl items-start mt-24 justify-center ">
                 <Link
                   href={'/'}
-                  onClick={()=>setOpen(false)}
-                  className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
+                  onClick={() => setOpen(false)}
+                  className=" hover:text-primary ease-in-out duration-300 whitespace-nowrap"
+                >
                   Home
                 </Link>
                 <Link
                   href={'/about'}
-                  onClick={()=>setOpen(false)}
-                  className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
+                  onClick={() => setOpen(false)}
+                  className=" hover:text-primary ease-in-out duration-300 whitespace-nowrap"
+                >
                   About
                 </Link>
                 <Link
-                  href={'/#services'}
-                  onClick={()=>setOpen(false)}
-                  className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
+                  href={'/services'}
+                  onClick={() => setOpen(false)}
+                  className=" hover:text-primary ease-in-out duration-300 whitespace-nowrap"
+                >
                   Services
                 </Link>
                 <Link
                   href={'/showcase'}
-                  onClick={()=>setOpen(false)}
-                  className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
+                  onClick={() => setOpen(false)}
+                  className=" hover:text-primary ease-in-out duration-300 whitespace-nowrap"
+                >
                   Showcase
                 </Link>
                 <Link
                   href={'/contact'}
-                  onClick={()=>setOpen(false)}
-                  className=' hover:text-primary ease-in-out duration-300 whitespace-nowrap'>
+                  onClick={() => setOpen(false)}
+                  className=" hover:text-primary ease-in-out duration-300 whitespace-nowrap"
+                >
                   Contact
                 </Link>
               </nav>
-              <div className='flex gap-4 mt-auto'>
+              <div className="flex gap-4 mt-auto">
                 <Link
                   href={
                     'https://api.whatsapp.com/send/?phone=971569007480&text&type=phone_number&app_absent=0'
                   }
-                  target='_blank'
-                  onClick={()=>setOpen(false)}
-                  className='flex gap-2 items-center'>
-                  <FaWhatsapp className='h-7 w-7 text-green-500' />
+                  target="_blank"
+                  onClick={() => setOpen(false)}
+                  className="flex gap-2 items-center"
+                >
+                  <FaWhatsapp className="h-7 w-7 text-green-500" />
                 </Link>
                 <Link
                   href={
                     'https://www.instagram.com/artseum_it_solution/?igsh=MTByZG5tazJzMzhiMg%3D%3D&utm_source=qr'
                   }
-                  target='_blank'
-                  onClick={()=>setOpen(false)}
-                  className='flex gap-2 items-center'>
-                  <FaInstagram className='h-7 w-7 text-pink-500' />
+                  target="_blank"
+                  onClick={() => setOpen(false)}
+                  className="flex gap-2 items-center"
+                >
+                  <FaInstagram className="h-7 w-7 text-pink-500" />
                 </Link>
                 <Link
                   href={
                     'https://www.linkedin.com/in/artseum-it-solution-2a15762b4/'
                   }
-                  target='_blank'
-                  onClick={()=>setOpen(false)}
-                  className='flex gap-2 items-center'>
-                  <FaLinkedin className='h-7 w-7 text-blue-600' />
+                  target="_blank"
+                  onClick={() => setOpen(false)}
+                  className="flex gap-2 items-center"
+                >
+                  <FaLinkedin className="h-7 w-7 text-blue-600" />
                 </Link>
                 <Link
                   href={
                     'https://www.facebook.com/profile.php?id=61556533765869&sfnsn=scwspwa&mibextid=RUbZ1f'
                   }
-                  target='_blank'
-                  onClick={()=>setOpen(false)}
-                  className='flex gap-2 items-center'>
-                  <FaFacebook className='h-7 w-7 text-blue-500' />
+                  target="_blank"
+                  onClick={() => setOpen(false)}
+                  className="flex gap-2 items-center"
+                >
+                  <FaFacebook className="h-7 w-7 text-blue-500" />
                 </Link>
               </div>
-              <p className='text-start text-sm font-light'>
+              <p className="text-start text-sm font-light">
                 Copyright &#169; 2021 - {new Date().getFullYear()}. Arteseum IT
                 Solution{' '}
               </p>

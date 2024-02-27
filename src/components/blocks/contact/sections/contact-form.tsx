@@ -76,7 +76,7 @@ export const ContactForm = () => {
   async function onSubmit(data: FormValues) {
     setLoading(true);
     setPayload({
-      to: data.email,
+      to: `artseumitsolution@gmail.com, ${data.email}`,
       subject: `Inquiry from ${data.name}`,
       body: template(data),
     });
