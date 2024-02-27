@@ -129,7 +129,7 @@ export const Footer = () => {
         </div>
         <div className="w-full">
           <p className="text-center font-light">
-            Copyright &#169; 2021 - {new Date().getFullYear()}. Arteseum IT
+            Copyright &#169; 2021 - {new Date().getFullYear()}. Artseum IT
             Solution{' '}
           </p>
         </div>
