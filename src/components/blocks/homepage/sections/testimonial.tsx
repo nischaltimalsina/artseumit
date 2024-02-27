@@ -23,7 +23,7 @@ export const Testimonial = () => {
             Our Clients&apos; Success Stories
           </h2>
         </div>
-        <div className="w-[calc(100%-100px)] mx-auto h-fit lg:mt-12">
+        <div className="w-full sm:w-[calc(100%-100px)] mx-auto h-fit lg:mt-12">
           <Carousel
             opts={{
               align: 'start',
@@ -35,17 +35,17 @@ export const Testimonial = () => {
               {testimonial.map((item, index) => (
                 <CarouselItem key={index} className="lg:basis-1/2">
                   <div className="p-1">
-                    <div className="relative flex flex-col items-start justify-start p-6 gap-8 w-full shadow-sm rounded-xl bg-secondary h-80 h-full pr-56 overflow-hidden">
+                    <div className="relative flex flex-col items-start justify-between p-6 gap-8 w-full shadow-sm rounded-xl bg-secondary h-96 xl:pr-56 overflow-hidden">
+                      <p className="font-light text-base">{item.description}</p>
                       <span className="text-3xl font-semibold">
                         {item.title}
                       </span>
-                      <p className="font-light">{item.description}</p>
-                      <div className="flex w-full justify-end absolute  right-0 bottom-0">
+                      <div className="flex w-full justify-end absolute right-0 bottom-0">
                         <Image
                           unoptimized
                           src={item.image.src}
                           alt={item.title}
-                          className="h-56 w-56 object-contain object-center"
+                          className="h-48 w-48 md:h-56 md:w-56 object-contain object-center mix-blend-multiply"
                           width={100}
                           height={100}
                         />
