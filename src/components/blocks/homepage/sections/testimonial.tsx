@@ -23,19 +23,19 @@ export const Testimonial = () => {
             Our Clients&apos; Success Stories
           </h2>
         </div>
-        <div className="w-full lg:mt-12">
+        <div className="w-[calc(100%-100px)] mx-auto h-fit lg:mt-12">
           <Carousel
             opts={{
               align: 'start',
               loop: true,
             }}
-            className="w-full"
+            className="w-full h-fit"
           >
             <CarouselContent>
               {testimonial.map((item, index) => (
                 <CarouselItem key={index} className="lg:basis-1/2">
                   <div className="p-1">
-                    <div className="relative flex flex-col items-start justify-start p-6 gap-8 w-full shadow-sm rounded-xl bg-secondary min-h-80 pr-56 overflow-hidden">
+                    <div className="relative flex flex-col items-start justify-start p-6 gap-8 w-full shadow-sm rounded-xl bg-secondary h-80 h-full pr-56 overflow-hidden">
                       <span className="text-3xl font-semibold">
                         {item.title}
                       </span>

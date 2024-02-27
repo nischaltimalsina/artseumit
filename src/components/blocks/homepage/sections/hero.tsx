@@ -8,6 +8,7 @@ import proj from '@/assets/images/proj.jpg';
 import logo_white from '@/assets/images/logo-white.jpeg';
 import Marquee from '@/lib/marqee';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
+import Link from 'next/link';
 
 export const Hero = () => {
   return (
@@ -31,7 +32,7 @@ export const Hero = () => {
             landscape.
           </h2>
           <div className="flex w-full gap-8 flex-wrap items-center mt-6">
-            <a href="/contact" className="w-full sm:w-fit">
+            <Link href="/contact" className="w-full sm:w-fit">
               <Button
                 size={'lg'}
                 variant="outline"
@@ -40,17 +41,18 @@ export const Hero = () => {
                 Get in Touch
                 <ArrowRightIcon className="h-6 w-6" />
               </Button>
-            </a>
-            <a
-              href="/src/assets/data/artseum-profile.pdf"
+            </Link>
+            <Link
+              href={'/profile/artseum-profile.pdf'}
               className="w-full sm:w-fit h-14 flex items-center justify-center sm:justify-start text-lg text-blue-600"
               download
+              locale={false}
             >
               Download Our Profile (pdf)
-            </a>
+            </Link>
           </div>
         </div>
-        <div className="lg:basis-1/2 flex flex-col gap-4 ">
+        <div className="lg:basis-1/2 flex flex-col gap-4">
           <div className=" w-full overflow-hidden rounded-xl relative mx-auto lg:max-w-2xl h-[34rem]">
             <Image
               src={hero}

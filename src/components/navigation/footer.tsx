@@ -1,6 +1,4 @@
 import React from 'react';
-import { ArrowRightIcon } from 'lucide-react';
-import { Button } from '@/components/ui';
 import { Logo } from '@/assets/jsx/logo';
 import Link from 'next/link';
 import {
@@ -54,9 +52,10 @@ export const Footer = () => {
               <span className="font-light leading-none">Services</span>
             </Link>
             <Link
-              href={'/src/assets/data/artseum-profile.pdf'}
+              href={'/profile/artseum-profile.pdf'}
               className="flex gap-2 items-start"
               download
+              locale={false}
             >
               <span className="font-light leading-none">
                 Download Our Profile (pdf)
